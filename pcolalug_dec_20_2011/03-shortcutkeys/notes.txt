@@ -1,0 +1,19 @@
+set -o vi
+    - * expansion in vi mode
+    - / for search
+
+set -o emacs
+    C-a    beginning of line
+    C-e    end of line
+    C-u    erase line
+    C-k    delete line from cursor
+    C-w    delete word before cursor
+    C-t    switch 2 characters
+    C-s    lock screen
+    C-q    unlock screen
+    C-p    up history
+    C-n    down history
+    Esc .  last argument
+    C-r    search history
+    C-z    send  to background
+    fg     bring to foreground

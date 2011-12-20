@@ -1,0 +1,9 @@
+completion:
+    ls<tab><tab>
+    ls -<tab>
+    ssh <tab>
+    kill <tab>
+
+correction
+    excport<tab>
+    ls /bot

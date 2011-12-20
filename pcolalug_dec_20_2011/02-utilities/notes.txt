@@ -1,0 +1,11 @@
+grep ( -r recursive, -i case insensitive)
+
+awk ( -F, print, if, regexes)
+    awk -F ':' '{print $7}' /etc/passwd |sort |uniq -c|sort -nr
+
+find (-name, -type, -size, -print0)
+    -exec with ; vs +
+
+xargs
+
+history

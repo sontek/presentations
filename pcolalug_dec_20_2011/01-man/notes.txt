@@ -1,0 +1,7 @@
+man man
+man builtins
+man 5 crontab
+apropos -s 5 '.*'
+man -a crontab 
+man -k crontab 
+pinfo
