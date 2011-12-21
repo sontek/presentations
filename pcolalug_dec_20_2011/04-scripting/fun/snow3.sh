@@ -23,7 +23,6 @@ function move_flake() {
 
     lastflakes[$i]=${snowflakes[$i]}
     snowflakes[$i]=$((${snowflakes[$i]}+1))
-
 }
 
 while :
