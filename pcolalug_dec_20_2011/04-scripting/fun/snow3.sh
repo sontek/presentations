@@ -3,10 +3,10 @@
 LINES=$(tput lines)
 COLUMNS=$(tput cols)
 
-clear
-
 declare -A snowflakes
 declare -A lastflakes
+
+clear
 
 function move_flake() {
     i="$1"
@@ -19,7 +19,7 @@ function move_flake() {
         fi
     fi
 
-    printf "\033[%s;%sH*\033[0;0H" ${snowflakes[$i]} $i
+    printf "\033[%s;%sH❄\033[0;0H" ${snowflakes[$i]} $i
 
     lastflakes[$i]=${snowflakes[$i]}
     snowflakes[$i]=$((${snowflakes[$i]}+1))
