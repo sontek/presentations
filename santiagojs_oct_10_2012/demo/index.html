@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Restaurant Reviews</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class='container'>
+      <div class='hero-unit'>
+        <h1>Restaurant Reviews</h1>
+        <p><a href="solved.html">View solved version</a></p>
+      </div>
+      <div class='row'>
+        <div class='span12' id='reviews'>
+          Loading...
+        </div>
+      </div>
+    </div>
+
+    <script type="text/x-hogan-template" id="index-template">
+      <h2>There are {{ count }} reviews</h2>
+    </script>
+
+    <!-- TODO:
+      * A template for an individual review
+      * A template for a review creation form
+        for this, here is a bootstrap form element:
+          <div class='control-group'>
+            <label class='control-label' for='id_of_field'>Field</label>
+            <div class='controls'>
+              <input type='text' class='input-xlarge' id='id_of_field'>
+            </div>
+          </div>
+        and a bootstrap submit button:
+          <div class="form-actions">
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </div>
+    -->
+
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/underscore.js"></script>
+    <script src="js/backbone.js"></script>
+    <script src="js/hogan.js"></script>
+    <script src="js/backbone-localstorage.js"></script>
+    <script src="js/reviews.js"></script>
+    <script>$(function() { Reviews.init($('#reviews')); });</script>
+  </body>
+</html>
